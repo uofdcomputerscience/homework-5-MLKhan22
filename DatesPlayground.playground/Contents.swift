@@ -10,9 +10,7 @@ let components = DateComponents(calendar: .current, year: 2019, month: 10, day: 
 let testDate = components.date
 
 // Compare the two dates to see if they occur in the same Calendar day
-if Calendar.current.isDate(date, inSameDayAs: testDate!) {
-    print("Same Calendar Day")
-}
+print(Calendar.current.isDate(date, inSameDayAs: testDate!))
 // Use a date formatter
 
 let formatter = DateFormatter()
